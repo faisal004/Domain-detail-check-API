@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-black">
+    <div class="text-center px-5 py-3 text-4xl text-blue-600 font-extrabold ">
+        Domain Search
+    </div>
+    <div class="text-white text-center font-semibold text-lg">
+        Check availabilty and information of any Domain
+    </div>
+    <div id="ava" class="text-white text-center font-normal text-sm"></div>
+    <div class="text-center px-5 py-5 ">
+        <input id="enterDomain" class="px-3 rounded-md w-1/3" type="text" placeholder="Enter Domain(eg-something.com)">
+        <button
+            class="rounded-xl font-thick text-white px-5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-400 duration-300 mx-3"
+            onclick="searchDomain()">Search</button>
+    </div>
+
+    <div class="h-9 w-2/3 mx-auto ">
+        <span class="text-white text-left font-medium">Detail:</span>
+        <div class="  bg-white text-black justify-between rounded-xl">
+
+            <div class=" px-2 py-2 my-2">Domain:<span id="domain" class="text-black px-10 ">---</span>
+            </div>
+            <hr>
+            <div class=" px-2 py-2 my-2">Status:<span id="status" class="text-black px-10  ">---</span>
+            </div>
+            <hr>
+            <div class=" px-2 py-2 my-2">Registrant:<span id="registrant" class="text-black  px-10">---</span>
+            </div>
+            <hr>
+            <div class="px-2 py-2 my-2">Created On:<span id="created" class="text-black  px-10">---</span>
+            </div>
+            <hr>
+            <div class=" px-2 py-2 my-2">Expires After:<span id="expires" class="text-black px-10">---</span>
+            </div>
+            <hr>
+            <div class=" px-2 py-2 my-2">Age:<span id="updated" class="text-black px-10">---</span>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
